@@ -1,0 +1,21 @@
+{
+    "project": {
+        "name": "drc2d",
+        "author": "Elias Renko",
+        "version": "0.0.1",
+        "build": {
+            "mainClass": "Main",
+            "sourceFolder": "src",
+            "resourcesFolder": "res",
+            "debug": "true",
+            "dependencies": [
+                "cascade",
+                "drc2d",
+                "drc2d-js"
+            ],
+            "flags": [
+                "-dce full"
+            ]
+        }
+    }
+}
