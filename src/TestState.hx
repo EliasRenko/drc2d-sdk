@@ -9,6 +9,11 @@ class TestState extends State {
     public function new() {
         
         super();
+    }
+
+    override function init() {
+
+        super.init();
 
         var image:Image = new Image(Common.resources.getProfile('res/profiles/texture.json'), [Common.resources.getTexture('res/graphics/grid_bw.png')]);
 
