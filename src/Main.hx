@@ -1,4 +1,7 @@
+package;
+
 import drc.core.App;
+import drc.types.AppEventType;
 
 class Main {
     
@@ -6,8 +9,13 @@ class Main {
         
         var app:App = new App();
 
-        app.addState(new TestState());
+        app.addEventListener(onReady, READY);
 
         app.run();
+    }
+    
+    public static function onReady(app:App, type:UInt) {
+        
+        app.addState(new TestState());
     }
 }

@@ -1,21 +1,23 @@
 {
-    "project": {
-        "name": "drc2d",
-        "author": "Elias Renko",
-        "version": "0.0.1",
-        "build": {
-            "mainClass": "Main",
-            "sourceFolder": "src",
-            "resourcesFolder": "res",
-            "debug": "true",
-            "dependencies": [
-                "cascade",
-                "drc2d",
-                "drc2d-js"
-            ],
-            "flags": [
-                "-dce full"
-            ]
-        }
+    "name": "drc2d",
+    "author": "Elias Renko",
+    "version": "0.0.1",
+    "build": {
+        "mainClass": "Main",
+        "sourceFolder": "src",
+        "resourcesFolder": "res",
+        "debug": true,
+        "dependencies": [
+            "cascade",
+            "drc2d",
+            "drc2d-js",
+            "haxe-commands",
+            "haxe-neutralino",
+            "haxe-events",
+            "haxe-unit"
+        ],
+        "flags": [
+            "-dce full"
+        ]
     }
 }
