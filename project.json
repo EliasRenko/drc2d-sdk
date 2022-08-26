@@ -17,7 +17,8 @@
             "haxe-unit"
         ],
         "flags": [
-            "-dce full"
+            "-dce full",
+            "-debug"
         ]
     }
 }

@@ -1,0 +1,24 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run",
+			"type": "shell",
+			"command": "haxelib",
+			"args": [
+				"run",
+				"cascade",
+				"-build",
+				"js"
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": {
+				"cwd": "${workspaceFolder:drc2d-sdk}"
+			}
+		}
+	]
+}
