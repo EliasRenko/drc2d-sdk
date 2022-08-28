@@ -16,6 +16,8 @@ class Main {
     
     public static function onReady(app:App, type:UInt) {
         
-        app.addState(new TestState());
+        app.addState(new MapTestState());
+
+        
     }
 }

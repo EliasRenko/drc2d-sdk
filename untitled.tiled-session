@@ -1,0 +1,112 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "maps/testmap1.tmj",
+    "expandedProjectPaths": [
+        ".",
+        "maps",
+        "tilesets"
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "/tilesets/dev.tsj": {
+            "scaleInDock": 1
+        },
+        "/tilesets/dev2.tsj": {
+            "scaleInDock": 1
+        },
+        "dev.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 4
+        },
+        "maps/dev.tsx": {
+            "scaleInDock": 1
+        },
+        "maps/testmap1.tmj": {
+            "scale": 0.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 740,
+                "y": 536
+            }
+        },
+        "maps/untitled..tmx": {
+            "scale": 0.583544921875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 639.1967199397541,
+                "y": 747.157560036817
+            }
+        },
+        "maps/untitled.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 526.6666666666665,
+                "y": 692
+            }
+        },
+        "res/maps/testmap1.tmj": {
+            "scale": 0.838671875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 637.9133674895203,
+                "y": 511.5230554261761
+            }
+        },
+        "res/tilesets/dev.tsj": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "res/tilesets/dev2.tsj": {
+            "scaleInDock": 1
+        },
+        "tilesets/dev.tsj": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesets/dev.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesets/dev2.tsj": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "untitled.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 654.6666666666665,
+                "y": 530
+            }
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Renko/Documents/Projects/Haxe/drc2d-sdk/res/maps",
+    "last.externalTilesetPath": "C:/Users/Renko/Documents/Projects/Haxe/drc2d-sdk/res/tilesets",
+    "last.imagePath": "C:/Users/Renko/Documents/Projects/Haxe/drc2d-sdk/res/graphics",
+    "map.height": 32,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "json",
+    "map.width": 40,
+    "openFiles": [
+        "maps/testmap1.tmj"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "res/maps/testmap1.tmj",
+        "res/tilesets/dev.tsj",
+        "maps/testmap1.tmj",
+        "tilesets/dev.tsj",
+        "tilesets/dev.tsx",
+        "tilesets/dev2.tsj",
+        "maps/untitled..tmx",
+        "untitled.tmx",
+        "dev.tsx"
+    ],
+    "tileset.lastUsedFormat": "json"
+}
