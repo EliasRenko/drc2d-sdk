@@ -2,6 +2,7 @@ package;
 
 import drc.core.App;
 import drc.types.AppEventType;
+import editor.SDK;
 
 class Main {
     
@@ -16,8 +17,8 @@ class Main {
     
     public static function onReady(app:App, type:UInt) {
         
-        app.addState(new MapTestState());
+        // app.addState(new MapTestState());
 
-        
+        var sdk:SDK = new SDK();
     }
 }

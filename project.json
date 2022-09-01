@@ -11,10 +11,12 @@
             "cascade",
             "drc2d",
             "drc2d-js",
+            "drc-editor",
             "haxe-commands",
             "haxe-neutralino",
             "haxe-events",
-            "haxe-unit"
+            "haxe-unit",
+            "jQueryExtern"
         ],
         "flags": [
             "-dce full",

@@ -3,11 +3,12 @@
 -js C:\Users\Renko\Documents\Projects\Haxe\drc2d-sdk/bin/js.debug/main.js 
 -lib cascade 
 -lib drc2d 
--lib drc2d-js 
+-lib drc2d-js
 -lib haxe-commands 
 -lib haxe-neutralino 
 -lib haxe-events 
 -lib haxe-unit 
+-lib jQueryExtern
 -debug 
 -debug 
 -dce full 
