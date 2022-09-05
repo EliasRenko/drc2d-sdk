@@ -28,6 +28,8 @@ class Form {
 
     public function addElement(control:Control):Control {
         
+        control.init();
+
         __root.appendChild(control.node);
 
         return control;

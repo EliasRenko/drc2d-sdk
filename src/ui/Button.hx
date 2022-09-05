@@ -20,14 +20,23 @@ class Button extends Element {
 
     override public function init():Void {
 
-        __element.addEventListener('onclick', function(event:MouseEvent) {
+        // __element.onclick = function(event:MouseEvent) {
 
-            var a = EventType.fromString(event.type);
+        //     var a = EventType.fromString(event.type);
 
-            trace('ASDASD');
+        //     trace('ASDASD');
 
-            dispatchEvent(this, a);
-        });
+        //     dispatchEvent(this, a);
+        // };
+
+        // __element.addEventListener('onclick', function(event:MouseEvent) {
+
+        //     var a = EventType.fromString(event.type);
+
+        //     trace('ASDASD');
+
+        //     dispatchEvent(this, a);
+        // });
     }
 
     override public function release():Void {

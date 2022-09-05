@@ -13,7 +13,7 @@ package ui;
 
 			case "unknown": UNKNOWN;
 			
-			case "onclick": MOUSE_CLICK;
+			case "click": MOUSE_CLICK;
 			
 			default: null;
 		}
@@ -25,7 +25,7 @@ package ui;
 
 			case EventType.UNKNOWN: "unknown";
 			
-			case EventType.MOUSE_CLICK: "onclick";
+			case EventType.MOUSE_CLICK: "click";
 			
 			default: null;
 		}

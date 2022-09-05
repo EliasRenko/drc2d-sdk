@@ -1,11 +1,14 @@
 package editor;
 
+import ui.EventType;
+import ui.Control;
 import ui.Button;
 import ui.MenuStrip;
 import ui.Form;
 import ui.List;
 import ui.Panel;
 import ui.Text;
+import ui.EventType;
 
 class SDK {
 
@@ -21,7 +24,15 @@ class SDK {
 
         form.init();
 
-        form.addElement(new Button('Hello!'));
+        var b = new Button('Hello!');
+
+        b.addEventListener(function(control:Control, type:UInt) {
+
+            trace('Button event: type > ' + type);
+
+        }, EventType.MOUSE_CLICK);
+
+        form.addElement(b);
 
         var list = new List();
 
