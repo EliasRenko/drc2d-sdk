@@ -1,5 +1,7 @@
 package editor;
 
+import ui.Window;
+import ui.PositionType;
 import ui.EventType;
 import ui.Control;
 import ui.Button;
@@ -56,7 +58,7 @@ class SDK {
 
         form.addElement(menuStrip);
 
-        var panel:Panel = new Panel();
+        var panel:Panel = new Panel(PositionType.ABSOLUTE);
 
         panel.style.width = '128px';
 
@@ -64,6 +66,10 @@ class SDK {
 
         form.addElement(panel);
 
-        editor = new Editor();
+        var window:Window = new Window(ABSOLUTE);
+
+        form.addElement(window);
+
+        //editor = new Editor();
     }
 }

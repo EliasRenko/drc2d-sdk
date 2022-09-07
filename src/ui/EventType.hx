@@ -1,6 +1,7 @@
 package ui;
 
 @:enum abstract EventType(UInt) from UInt to UInt {
+	
 	var UNKNOWN = 0;
 	
 	var MOUSE_CLICK = 1;
