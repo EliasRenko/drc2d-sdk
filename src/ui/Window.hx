@@ -11,9 +11,11 @@ class Window extends Panel {
 
     private var container:js.html.Element;
 
-    public function new(positionType:PositionType = ABSOLUTE, width:Int = 256, height:Int = 256) {
+    public function new(title:String, positionType:PositionType = ABSOLUTE, width:Int = 256, height:Int = 256) {
         
         super(positionType);
+
+        __element.classList.add('window_default');
 
         __element.style.width = Std.string(width) + 'px';
 
@@ -23,7 +25,11 @@ class Window extends Panel {
 
         titleBar.classList.add('window_titleBar_default');
 
+        titleBar.appendChild(Browser.document.createTextNode(title));
+
         container = Browser.document.createElement("div");
+
+        container.classList.add('window_container');
 
         __element.appendChild(titleBar);
 

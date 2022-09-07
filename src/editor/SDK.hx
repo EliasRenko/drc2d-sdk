@@ -66,7 +66,7 @@ class SDK {
 
         form.addElement(panel);
 
-        var window:Window = new Window(ABSOLUTE);
+        var window:Window = new Window('New window', ABSOLUTE);
 
         form.addElement(window);
 

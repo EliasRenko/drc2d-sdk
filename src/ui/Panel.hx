@@ -20,7 +20,7 @@ class Panel extends Element {
 
         __element.style.position = positionType;
 
-        __element.style.backgroundColor = "#92a8d1";
+        //__element.style.backgroundColor = "#92a8d1";
 
         super();
     }
