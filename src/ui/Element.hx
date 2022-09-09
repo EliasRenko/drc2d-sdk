@@ -15,9 +15,13 @@ class Element extends Control {
 
     private var __element:js.html.Element;
 
-    public function new() {
+    public function new(className:String) {
         
-        super();
+        super(className);
+    }
+
+    private function __createElement():js.html.Element {
+
     }
 
 	function get_display():String {

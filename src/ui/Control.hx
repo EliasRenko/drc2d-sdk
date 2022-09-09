@@ -11,7 +11,7 @@ class Control extends EventDispacher<Control> {
 
     // ** Privates
 
-    public function new() {
+    public function new(className:String) {
         
         super();
     }

@@ -12,7 +12,7 @@ class Panel extends Element {
 
     private var __y:Int = 0;
 
-    public function new(positionType:PositionType) {
+    public function new(positionType:PositionType, className:String) {
         
         __element = Browser.document.createElement("div");
 

@@ -13,9 +13,7 @@ class Button extends Element {
 
         __element.innerHTML = text;
 
-        __element.classList.add(className);
-
-        super();
+        super(className);
     }
 
     override public function init():Void {

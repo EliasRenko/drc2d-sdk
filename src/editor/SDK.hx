@@ -58,7 +58,7 @@ class SDK {
 
         form.addElement(menuStrip);
 
-        var panel:Panel = new Panel(PositionType.ABSOLUTE);
+        var panel:Panel = new Panel(PositionType.FIXED);
 
         panel.style.width = '128px';
 
