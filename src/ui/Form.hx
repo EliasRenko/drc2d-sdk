@@ -26,11 +26,11 @@ class Form {
         
     }
 
-    public function addElement(control:Control):Control {
+    public function addElement(control:IControl):IControl {
         
         control.init();
 
-        __root.appendChild(control.node);
+        __root.appendChild(control.getNode());
 
         return control;
     }

@@ -1,7 +1,5 @@
 package ui;
 
-import js.Browser;
-import js.html.MouseEvent;
 import ui.Element;
 
 class Panel extends Element {
@@ -12,17 +10,11 @@ class Panel extends Element {
 
     private var __y:Int = 0;
 
-    public function new(positionType:PositionType, className:String) {
+    public function new(positionType:PositionType, className:String = "panel_default") {
         
-        __element = Browser.document.createElement("div");
-
-        //__element.classList.add('draggable');
+        super('div', className);
 
         __element.style.position = positionType;
-
-        //__element.style.backgroundColor = "#92a8d1";
-
-        super();
     }
 
     override public function init():Void {
@@ -33,9 +25,9 @@ class Panel extends Element {
         
     }
 
-    public function addControl(control:Control):Control {
+    public function addControl(control:IControl):IControl {
 
-        __element.appendChild(control.node);
+        __element.appendChild(control.getNode());
 
         return control;
     }

@@ -1,17 +1,22 @@
 package ui;
 
+import ui.PositionType;
 import js.html.Node;
-import js.Browser;
 
 class Container extends Element {
     
-    public function new(className:String = 'container_default') {
+    public function new(position:PositionType = PositionType.RELATIVE, className:String = 'container_default') {
         
-        super();
+        super('div', className);
 
-        __element = Browser.document.createElement("div");
+        __element.style.position = position;
+    }
 
-        __element.classList.add(className);
+    public function addControl(control:IControl):IControl {
+        
+        __addElement(control.getNode());
+
+        return control;
     }
 
     private function __addElement(node:Node):Node {
@@ -21,5 +26,6 @@ class Container extends Element {
 
     private function __removeElement():Void {
         
+        // ** TODO: Implementation
     }
 }

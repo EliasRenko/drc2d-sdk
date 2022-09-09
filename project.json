@@ -8,11 +8,9 @@
         "resourcesFolder": "res",
         "debug": true,
         "dependencies": [
-            "cascade",
             "drc2d",
             "drc2d-js",
             "haxe-commands",
-            "haxe-neutralino",
             "haxe-events",
             "haxe-unit",
             "jQueryExtern"

@@ -10,11 +10,7 @@ class List extends Element {
 
     public function new(className:String = 'list_default') {
         
-        __element = Browser.document.createElement("ul");
-
-        __element.classList.add(className);
-
-        super();
+        super('ul', className);
     }
 
     override public function init():Void {
@@ -25,7 +21,7 @@ class List extends Element {
         
     }
 
-    public function addControl(control:Control):Control {
+    public function addControl(control:IControl):IControl {
 
         var listItem:ListItem = new ListItem();
 
@@ -33,7 +29,7 @@ class List extends Element {
 
         listItem.addControl(control);
 
-        __element.appendChild(listItem.node);
+        __element.appendChild(listItem.getNode());
 
         return control;
     }
@@ -56,28 +52,21 @@ class List extends Element {
 	}
 }
 
-private class ListItem extends Control {
+private class ListItem extends Element implements IControl {
     
-    private var __node:Node;
+    // ** Privates
 
     public function new() {
         
-        __node = Browser.document.createElement("li");
-
-        super();
+        super('li', 'listItem_default');
     }
 
-    public function addControl(control:Control):Control {
+    public function addControl(control:IControl):IControl {
         
         control.init();
 
-        __node.appendChild(control.node);
+        __element.appendChild(control.getNode());
 
         return control;
-    }
-
-    override function get_node():Node {
-
-        return __node;
     }
 }

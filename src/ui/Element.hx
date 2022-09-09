@@ -1,13 +1,13 @@
 package ui;
 
+import js.Browser;
 import js.html.CSSStyleDeclaration;
 import js.html.Node;
+import EventDispacher;
 
-class Element extends Control {
+class Element extends EventDispacher<Element> implements IControl {
     
     // ** Publics
-
-    public var display(get, set):String;
 
     public var style(get, null):CSSStyleDeclaration;
 
@@ -15,34 +15,45 @@ class Element extends Control {
 
     private var __element:js.html.Element;
 
-    public function new(className:String) {
+    public function new(tag:String, className:String) {
+
+        __element = __createElement(tag);
+
+        if (className != null) {
+
+            __element.classList.add(className);
+        }
+
+        super();
+    }
+
+    public function init():Void {
         
-        super(className);
     }
 
-    private function __createElement():js.html.Element {
-
+    public function release():Void {
+        
     }
 
-	function get_display():String {
-		
-        return __element.style.display;
-	}
+    public function addClassName(value:String):Void {
+        
+        __element.classList.add(value);
+    }
 
-	function set_display(value:String):String {
-		
-        __element.style.display = value;
+    public function getNode():Node {
+        
+        return __element;
+    }
 
-        return value;
-	}
+    private function __createElement(tag:String):js.html.Element {
+
+        return Browser.document.createElement(tag);
+    }
+
+    // ** Getters and setters
 
 	function get_style():CSSStyleDeclaration {
 		
         return __element.style;
 	}
-
-    override function get_node():Node {
-        
-        return __element;
-    }
 }

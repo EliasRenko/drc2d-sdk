@@ -1,9 +1,10 @@
 package editor;
 
+import ui.Container;
+import ui.Element;
 import ui.Window;
 import ui.PositionType;
 import ui.EventType;
-import ui.Control;
 import ui.Button;
 import ui.MenuStrip;
 import ui.Form;
@@ -28,7 +29,7 @@ class SDK {
 
         var b = new Button('Hello!');
 
-        b.addEventListener(function(control:Control, type:UInt) {
+        b.addEventListener(function(control:Element, type:EventType) {
 
             trace('Button event: type > ' + type);
 
@@ -38,9 +39,9 @@ class SDK {
 
         var list = new List();
 
-        list.marker = 'none';
+        //list.marker = 'none';
 
-        list.display = 'block';
+        //list.display = 'block';
 
         // list.addControl(new Text('File'));
         // list.addControl(new Text('Edit'));
@@ -71,5 +72,14 @@ class SDK {
         form.addElement(window);
 
         //editor = new Editor();
+
+        var container:Container = new Container(PositionType.FIXED);
+        container.addClassName('container_sidebar');
+
+        form.addElement(container);
+
+        var button_editor = new Button('Editor');
+        button_editor.addClassName('button_sidebar');
+        container.addControl(button_editor);
     }
 }

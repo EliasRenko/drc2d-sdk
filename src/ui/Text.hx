@@ -3,29 +3,40 @@ package ui;
 import js.Browser;
 import js.html.Node;
 
-class Text extends Control {
+class Text extends Container implements IControl {
     
-    // ** Private
+    // ** Publics
 
-    private var __node:Node;
+    public var text(get, set):String;
+
+    // ** Privates
+
+    private var __textNode:Node;
 
     public function new(text:String) {
         
-        __node = Browser.document.createTextNode(text);
-
-        super();
+        super('text_default');
+        
+        __textNode = __addElement(Browser.document.createTextNode(text));
     }
 
     override public function init():Void {
-    
+
     }
 
     override public function release():Void {
         
     }
 
-    override function get_node():Node {
-        
-        return __node;
-    }
+    // ** Getters and setters
+
+	function get_text():String {
+
+		return __element.textContent;
+	}
+
+	function set_text(value:String):String {
+
+		return __element.textContent = value;
+	}
 }

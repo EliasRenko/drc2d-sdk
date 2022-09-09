@@ -14,10 +14,10 @@ class MenuStrip extends Container {
 
         __list.marker = 'none';
 
-        __addElement(__list.node);
+        __addElement(__list.getNode());
     }
 
-    public function addItem(name:String):Control {
+    public function addItem(name:String):IControl {
 
         var button:Button = new Button(name, 'menuStrip_button_default');
 
