@@ -8,7 +8,7 @@ class MenuStrip extends Container {
 
     public function new(className:String = 'menuStrip_default') {
         
-        super(className);
+        super(PositionType.RELATIVE, className);
 
         __list = new __MenuStripList();
 

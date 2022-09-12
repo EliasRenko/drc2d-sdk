@@ -1,5 +1,6 @@
 package editor;
 
+import ui.WebglView;
 import ui.Container;
 import ui.Element;
 import ui.Window;
@@ -26,16 +27,6 @@ class SDK {
         var form:Form = new Form();
 
         form.init();
-
-        var b = new Button('Hello!');
-
-        b.addEventListener(function(control:Element, type:EventType) {
-
-            trace('Button event: type > ' + type);
-
-        }, EventType.MOUSE_CLICK);
-
-        form.addElement(b);
 
         var list = new List();
 
@@ -65,11 +56,11 @@ class SDK {
 
         panel.style.height = '256px';
 
-        form.addElement(panel);
+        //form.addElement(panel);
 
         var window:Window = new Window('New window', ABSOLUTE);
 
-        form.addElement(window);
+        //form.addElement(window);
 
         //editor = new Editor();
 
@@ -81,5 +72,23 @@ class SDK {
         var button_editor = new Button('Editor');
         button_editor.addClassName('button_sidebar');
         container.addControl(button_editor);
+
+        button_editor.addEventListener(function(control:Element, type:EventType) {
+
+            trace('Button event: type > ' + type);
+
+        }, EventType.MOUSE_CLICK);
+
+        var button_sprites = new Button('Sprites');
+        button_sprites.addClassName('button_sidebar');
+        container.addControl(button_sprites);
+
+        var context:Container = new Container(PositionType.RELATIVE);
+        context.addClassName('container_context');
+
+        form.addElement(context);
+
+        var webglView:WebglView = new WebglView();
+        context.addControl(webglView);
     }
 }

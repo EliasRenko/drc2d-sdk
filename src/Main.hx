@@ -5,9 +5,13 @@ import drc.types.AppEventType;
 import editor.SDK;
 
 class Main {
-    
+
+    public static var sdk:SDK;
+
     public static function main():Void {
         
+        sdk = new SDK();
+
         var app:App = new App();
 
         app.addEventListener(onReady, READY);
@@ -18,7 +22,5 @@ class Main {
     public static function onReady(app:App, type:UInt) {
         
         // app.addState(new MapTestState());
-
-        var sdk:SDK = new SDK();
     }
 }

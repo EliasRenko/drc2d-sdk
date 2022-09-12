@@ -1,0 +1,143 @@
+:root {
+
+    --gray_200: #EEEEEE;
+
+    --gray_300: #E0E0E0;
+
+    --gray_400: #BDBDBD;
+
+    --gray_500: #9E9E9E;
+
+    --gray_600: #757575;
+
+    --gray_700: #616161;
+
+    --gray_800: #424242;
+
+    --gray_900: #212121;
+
+    --white: #faf0e6;
+}
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+    
+    outline: 0;
+}
+
+#app {
+    
+    display: block;
+    position: relative;
+    margin: 0px 0px;
+}
+
+body {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+/* --- GL Canvas --- */
+
+.glCanvas {
+
+    position: absolute;
+    z-index: -1;
+}
+
+/* --- Button --- */
+
+.button_default {
+
+}
+
+/* --- Menustrip --- */
+ 
+.menuStrip_default {
+
+    background-color: var(--gray_600);
+    height: 32px;
+    width: inherit;
+}
+
+.menuStrip_list_default {
+
+    display: flex;
+    height: inherit;
+    position: relative;
+}
+
+.menuStrip_list_default > li {
+
+    height: inherit;
+}
+
+.menuStrip_button_default {
+
+    background: none;
+    border: none;
+    color: var(--gray_300);
+    font-weight: bold;
+    height: inherit;
+    text-align: center;
+}
+
+.menuStrip_button_default:hover {
+
+    background-color: var(--gray_400);
+}
+
+/* --- List --- */
+
+.list_default {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list_default > li {
+
+    float: left;
+    height: inherit;
+}
+
+.container_default {
+    
+}
+
+/* --- Panel --- */
+
+.panel_default {
+
+    background-color: var(--gray_800);
+}
+
+/* --- Window --- */
+
+.window_default {
+    
+    background-color: var(--gray_800);
+    position: absolute;
+    width: 256px;
+    height: 256px;
+}
+
+.window_titleBar_default {
+    
+    background-color: var(--gray_400);
+    position: relative;
+    height: 32px;
+    width: 100%;
+}
+
+.window_container_default {
+    height: 100%;
+    width: 100%;
+}

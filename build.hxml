@@ -1,12 +1,13 @@
 -cp src 
 -main Main 
--js C:\Users\efedorenko\Documents\projects\haxe\drc2d-sdk/bin/js.debug/main.js 
+-js C:\Users\Renko\Documents\Projects\Haxe\drc2d-sdk/bin/js.debug/main.js 
 -lib drc2d 
 -lib drc2d-js 
 -lib haxe-commands 
 -lib haxe-events 
 -lib haxe-unit 
 -lib jQueryExtern 
---debug 
+-debug 
+-debug 
 -dce full 
 -debug 

@@ -1,0 +1,43 @@
+:root {
+
+    --gray_200: #EEEEEE;
+
+    --gray_300: #E0E0E0;
+
+    --gray_400: #BDBDBD;
+
+    --gray_500: #9E9E9E;
+
+    --gray_600: #757575;
+
+    --gray_700: #616161;
+
+    --gray_800: #424242;
+
+    --gray_900: #212121;
+
+    --white: #faf0e6;
+}
+
+.webglView {
+
+    
+}
+
+.container_sidebar {
+
+    background-color: var(--gray_700);
+    height: 100%;
+    
+}
+
+.button_sidebar {
+
+    width: 100%;
+}
+
+.container_context {
+
+    height: 100%;
+    z-index: -1;
+}
